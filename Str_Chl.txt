@@ -1,0 +1,5 @@
+1. ID
+2. Target (назначение, цель)
+3. Steps (шаги)
+4. Expecting result (ожидаемый результат)
+5. Actual result (актуальный результат)
