@@ -1,0 +1,175 @@
+XML
+ 21. Создать внешний репозиторий c названием XML.
+ 22. Клонировать репозиторий XML на локальный компьютер.
+ 23. Внутри локального XML создать файл “new.xml”.
+ 24. Добавить файл под гит.
+ 25. Закоммитить файл.
+ 26. Отправить файл на внешний GitHub репозиторий.
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+ 28. Отправить изменения на внешний репозиторий.
+ 29. Создать файл preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+ 32. Сделать коммит в одну строку.
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git (main)
+$ cd xml
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ touch new.xml
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new.xml
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git add .
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git commit -m "add_new_file"
+[main (root-commit) cbe1b39] add_new_file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.xml
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 215 bytes | 215.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/V-Anil-R/XML.git
+ * [new branch]      main -> main
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ vim new.xml
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   new.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git add .
+warning: LF will be replaced by CRLF in new.xml.
+The file will have its original line endings in your working directory
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git commit -m "add_information"
+[main 62a5705] add_information
+ 1 file changed, 6 insertions(+)
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 332 bytes | 332.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/V-Anil-R/XML.git
+   cbe1b39..62a5705  main -> main
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ cat >> preferences.xml
+<question>
+        <fav_movie>Alien</fav_movie>
+        <fav_food>Fried_meet</fav_food>
+        <fav_season>Spring</fav_season>
+</question>
+
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ cat >> skills.xml
+<skills>
+        <skill1>madeHW</skill1>
+        <skill2>madeHWintime</skill2>
+</skills>
+
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        preferences.xml
+        skills.xml
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git add .
+warning: LF will be replaced by CRLF in preferences.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in skills.xml.
+The file will have its original line endings in your working directory
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git commit -m "add_two_files"
+[main 7930a3f] add_two_files
+ 2 files changed, 9 insertions(+)
+ create mode 100644 preferences.xml
+ create mode 100644 skills.xml
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 460 bytes | 460.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/V-Anil-R/XML.git
+   62a5705..7930a3f  main -> main
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.37 KiB | 8.00 KiB/s, done.
+From https://github.com/V-Anil-R/XML
+   7930a3f..6363647  main       -> origin/main
+Updating 7930a3f..6363647
+Fast-forward
+ bug_report.xml | 5 +++++
+ 1 file changed, 5 insertions(+)
+ create mode 100644 bug_report.xml
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git push
+Everything up-to-date
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/xml (main)
+$ git pull
+Already up to date.

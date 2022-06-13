@@ -1,0 +1,175 @@
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+ 3. Внутри локального TXT создать файл “new.txt”.
+ 4. Добавить файл под гит.
+ 5. Закоммитить файл.
+ 6. Отправить файл на внешний GitHub репозиторий.
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+ 8. Отправить изменения на внешний репозиторий.
+ 9. Создать файл preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+ 12. Сделать коммит в одну строку.
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+ 14. На веб интерфейсе создать файл bug_report.txt.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git (main)
+$ git clone https://github.com/V-Anil-R/TXT.git
+Cloning into 'TXT'...
+warning: You appear to have cloned an empty repository.
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git (main)
+$ cd txt
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ touch new.txt
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git add .
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git commit -m "add_new_file"
+[main (root-commit) 3038967] add_new_file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.txt
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 215 bytes | 215.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/V-Anil-R/TXT.git
+ * [new branch]      main -> main
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ vim new.txt
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   new.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git add .
+warning: LF will be replaced by CRLF in new.txt.
+The file will have its original line endings in your working directory
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git commit -m "add_new_information"
+[main 69e3937] add_new_information
+ 1 file changed, 4 insertions(+)
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 290 bytes | 290.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/V-Anil-R/TXT.git
+   3038967..69e3937  main -> main
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ cat >> preferences.txt
+favorite movie - Alien
+favorite food - fried meet
+favorite season - spring
+
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ cat >> skills.txt
+first skill - made homework
+second skill - made homeworks in time
+
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        preferences.txt
+        skills.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git add .
+warning: LF will be replaced by CRLF in preferences.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in skills.txt.
+The file will have its original line endings in your working directory
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git commit -m "add_two_files"
+[main b21e849] add_two_files
+ 2 files changed, 5 insertions(+)
+ create mode 100644 preferences.txt
+ create mode 100644 skills.txt
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 458 bytes | 458.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/V-Anil-R/TXT.git
+   69e3937..b21e849  main -> main
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.36 KiB | 8.00 KiB/s, done.
+From https://github.com/V-Anil-R/TXT
+   b21e849..3a2b40d  main       -> origin/main
+Updating b21e849..3a2b40d
+Fast-forward
+ bug_report.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 bug_report.txt
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git push
+Everything up-to-date
+
+User@V-Anil-R-1 MINGW64 /g/Learning/QA_Ksendzov_30_Group/QA_Kzendzov_GB/Homework/Git/txt (main)
+$ git pull
+Already up to date.
